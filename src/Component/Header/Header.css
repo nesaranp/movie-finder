@@ -102,3 +102,8 @@ li {
   width: 100%;
 }
 
+@media only screen and (max-width: 581px) {
+  .toggleButton{
+    padding-right: 16px;
+  }
+}

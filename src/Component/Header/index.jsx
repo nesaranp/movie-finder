@@ -10,11 +10,11 @@ function Header(props) {
 
   return (
     <>
-      <div className={`row pt-2 pb-2 ${props.isDark ? 'headerDark' : 'headerLight'}`}>
-        <div className="col-2 my-auto pl-5">
+      <div className={`row m-0 pt-2 pb-2 ${props.isDark ? 'headerDark' : 'headerLight'}`}>
+        <div className="col-2 col-sm-2 my-auto pl-3 pr-0">
           <Link to="/">HOME</Link>
         </div>
-        <div className="col-8 my-auto text-center">
+        <div className="col-7 col-sm-8 my-auto p-0 text-center">
           <input className="searchBar"
           id="search"
           name="search"
@@ -24,7 +24,7 @@ function Header(props) {
           onClick={() => setSearchDropdown(true)}
           />
         </div>
-        <div className="col-2 text-right pr-5 my-auto">
+        <div className="col-2 col-sm-2 p-0 text-center my-auto">
           <label class="switch">
             <input type="checkbox" onChange={props.onThemeChange} />
             <span class="slider round"></span>

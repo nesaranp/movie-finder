@@ -1,0 +1,16 @@
+.MovieDedatilsConatiner {
+  text-align: -webkit-center;
+  
+}
+
+@media only screen and (max-width: 320px) {
+  .MovieDedatilsConatiner {
+    margin: 20px 15px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .MovieDedatilsConatiner {
+    margin: 25px;
+  }
+}
