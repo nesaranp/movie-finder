@@ -1,0 +1,21 @@
+.movieCard {
+  background-color: #191818;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.movieCardImage {
+  height: 350px;
+  width: 260px;
+  border-radius: 5px;
+}
+
+.discription {
+  color: white;
+  width: 400px;
+  margin: 25px 30px;
+  text-align: initial;
+}

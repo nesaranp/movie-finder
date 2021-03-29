@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import MovieDetailsCard from '../../Component/MovieDetailsCard';
 
 
 function MovieDetails() {
@@ -17,7 +18,9 @@ function MovieDetails() {
 
   return (
     <>
-      <div>movie</div>
+      <div style={{textAlign: "-webkit-center", margin: "40px"}}>
+        <MovieDetailsCard cardData={data} />
+      </div>
     </>
   )
 }

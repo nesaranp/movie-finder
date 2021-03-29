@@ -1,0 +1,5 @@
+.HomeContatiner {
+  margin: 25px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}

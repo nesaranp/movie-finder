@@ -1,0 +1,19 @@
+.searchCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #191818;
+  height: fit-content;
+  width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  color: #ffffff;
+  margin: 10px;
+}
+
+.cardImage {
+  height: 300px;
+  border-radius: 5px;
+}

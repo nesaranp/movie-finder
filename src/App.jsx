@@ -8,16 +8,10 @@ import MovieDetails from './Container/MovieDetails';
 function App() {
   const [searchReasult, setSearchReasult] = useState([]);
   const [isDark, setIsDark] = useState(false);
-  // const backgroundStyle = () => {
-  //   if (theme === "dark") {
-  //     return {backgroundColor:"#353333", height:"100vh"};
-  //   }
-  //    else return {backgroundColor:"#cac5c5", height:"100vh"}
-  // };
-  // const [selectedValue, setSelectedValue] = useState();
 
   const onSearchChange = (event) => {
     console.log('-------', event.target.value);
+
     axios.get(`http://www.omdbapi.com/?s=${event.target.value}&apikey=14d639a0`)
     .then((res) => {
       setSearchReasult(res.data.Search);
@@ -38,7 +32,7 @@ function App() {
             <MovieDetails />
           </Route>
           <Route path="/" >
-            <Home />
+            <Home searchReasult={searchReasult} />
           </Route>
         </Switch>
       </div>
